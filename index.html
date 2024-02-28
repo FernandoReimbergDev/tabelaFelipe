@@ -1,74 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tabela de Preços Elétrica</title>
-<link rel="stylesheet" href="./style.css">
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-</head>
-<body>
-    <h2>Tabela de Preços de Serviços de Elétrica</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Serviço</th>
-                <th>Descrição</th>
-                <th>Preço</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Chuiveiro eletrico</td>
-                <td>Chuveiro elétrico: instalação</td>
-                <td>R$ 190,00</td>
-            </tr>
-            <tr>
-                <td>Troca de Lâmpada</td>
-                <td>Troca de lâmpada comum</td>
-                <td>R$ 800,00</td>
-            </tr>
-            <tr>
-                <td>Reparo de Curto-Circuito</td>
-                <td>Reparo de curto-circuito em circuito elétrico residencial</td>
-                <td>R$ 100,00</td>
-            </tr>
-            <tr>
-                <td>Instalação de Disjuntor</td>
-                <td>Instalação de disjuntor para proteção de circuitos elétricos</td>
-                <td>R$ 80,00</td>
-            </tr>
-            <tr>
-                <td>Manutenção de Quadro de Distribuição</td>
-                <td>Manutenção preventiva em quadro de distribuição de energia</td>
-                <td>R$ 150,00</td>
-            </tr>
-            <tr>
-                <td>Chuiveiro eletrico</td>
-                <td>Chuveiro elétrico: instalação</td>
-                <td>R$ 180,00</td>
-            </tr>
-            <tr>
-                <td>Troca de Lâmpada</td>
-                <td>Troca de lâmpada comum</td>
-                <td>R$ 20,00</td>
-            </tr>
-            <tr>
-                <td>Reparo de Curto-Circuito</td>
-                <td>Reparo de curto-circuito em circuito elétrico residencial</td>
-                <td>R$ 100,00</td>
-            </tr>
-            <tr>
-                <td>Instalação de Disjuntor</td>
-                <td>Instalação de disjuntor para proteção de circuitos elétricos</td>
-                <td>R$ 80,00</td>
-            </tr>
-            <tr>
-                <td>Manutenção de Quadro de Distribuição</td>
-                <td>Manutenção preventiva em quadro de distribuição de energia</td>
-                <td>R$ 150,00</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FELIPE | Instalações Elétricas</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <section>
+        <header>
+          <a href="/">
+            <img src="./felipeLogo.png" />
+          </a>
+          <p class="CNPJ">CNPJ: 29.437.511/0001-57</p>
+        </header>
+      </section>
+      <section class="tabela_valores">
+        <h1>Tabela de Preços de Serviços de Elétrica</h1>
+        <div class="container_table">
+            <table id="tabela_tbody">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" name="checkAll" id="checkAll"></th>
+                        <th>Tipo de Serviço</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td><input type="checkbox" name="check_servico"></td>
+                        <td>Elétrica</td>
+                        <td>chuveiro elétrico: instalação</td>
+                        <td>R$ 180,00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+      </section>
+    </div>
+
+
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
