@@ -10,7 +10,7 @@ class TabelaServicos {
         novaLinha.innerHTML = `
             <td><input type="checkbox" name="check_servico"></td>
             <td>${servico.SERVICO}</td>
-            <td>${servico.VALOR}</td>
+            <td style="text-wrap:nowrap">${servico.VALOR}</td>
         `;
         this.tabela.querySelector('tbody').appendChild(novaLinha);
     }

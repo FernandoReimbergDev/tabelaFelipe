@@ -32,20 +32,23 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: var(--bg-color);
-  padding: 0.8rem;
+  padding: 1.6rem;
   position: relative;
+  width: 100%;
 }
 
+
 header a img {
-  width: 18rem;
+  width: 13rem;
 }
 
 header p {
   position: absolute;
   bottom: 0;
   right: 2.5%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -61,13 +64,14 @@ h1 {
   padding: 0.8rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  font-size: 2.4rem;
 }
 
 .container_table {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  padding: 0.8rem;
+  padding: 1.2rem;
 }
 
 table {
@@ -92,4 +96,35 @@ th {
 
 tr:hover {
     background-color: #f2f2f2;
+}
+
+@media (max-width: 768px ){
+    h1{
+        font-size: 1.6rem;
+    }
+
+    header p {
+        display: none;
+    }
+
+    header a img{
+        width: 16rem;
+    }
+}
+
+@media print {
+    header {
+        background: #b6e2ed;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .date,
+    .time,
+    .page-name {
+      display: none !important;
+    }
 }

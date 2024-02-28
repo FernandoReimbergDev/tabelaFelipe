@@ -11,46 +11,37 @@
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="app">
       <section>
-        <header style="background: #b6e2ed">
-          <a href="/">
-            <img src="./felipeLogo.png" />
-          </a>
+        <header>
+            <a href="/">
+                <img src="./felipeLogo.png" />
+            </a>
           <p class="CNPJ">CNPJ: 29.437.511/0001-57</p>
         </header>
       </section>
       <section class="tabela_valores">
         <h1>Tabela de Preços de Serviços de Elétrica</h1>
         <div class="container_table">
-            <table id="tabela_tbody">
-                <thead>
-                    <tr>
-                        <th><input type="checkbox" name="checkAll" id="checkAll"></th>
-                        <!-- <th>Tipo de Serviço</th> -->
-                        <th>Descrição</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody >
-                    <tr>
-                        <td><input type="checkbox" name="check_servico"></td>
-                        <td>chuveiro elétrico: instalação</td>
-                        <td>R$ 180,00</td>
-                    </tr>
-                </tbody>
-            </table>
-
+          <table id="tabela_tbody">
+            <thead>
+              <tr>
+                <th><input type="checkbox" name="checkAll" id="checkAll" /></th>
+                <th>Descrição</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
       </section>
     </div>
-
 
     <script src="./main.js" type="module"></script>
   </body>
