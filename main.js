@@ -9,7 +9,6 @@ class TabelaServicos {
         const novaLinha = document.createElement('tr');
         novaLinha.innerHTML = `
             <td><input type="checkbox" name="check_servico"></td>
-            <td>${servico.TIPO}</td>
             <td>${servico.SERVICO}</td>
             <td>${servico.VALOR}</td>
         `;
